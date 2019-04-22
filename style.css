@@ -1,0 +1,118 @@
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky {
+  padding-top: 102px;
+}
+
+.header{
+  padding: 20px;
+  border-bottom: 1px solid black;
+  background: url("waterrrrr.jpg");
+  width: 100%;
+}
+
+a{
+  padding: 15px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.name-header{
+  /* margin: 0; */
+  padding: 25px;
+}
+
+.top-nav{
+  display: flex;
+  /* justify-content: space-between */
+}
+
+.name{
+  align-self: flex-start;
+}
+
+.project-card{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: .2px solid darkgrey;
+  margin-top: 15px;
+}
+
+.project-img{
+  width: 100%;
+  height: 100%;
+}
+
+.project-link{
+  color: black;
+  font-size: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.project-desc{
+  text-align: center;
+  padding: 15px;
+}
+
+.project-nav{
+  color: black;
+}
+
+.project-links{
+  text-align: center;
+}
+
+a:link, a:visited {
+    color: rgb(131, 185, 255);
+    text-decoration: none;
+}
+
+.name{
+  font-size: 40px;
+}
+
+.about-me{
+  font-size: 25px;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.aboutMe{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+}
+
+body{
+  background-color: lightblue
+}
