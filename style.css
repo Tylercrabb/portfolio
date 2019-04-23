@@ -116,3 +116,26 @@ a:link, a:visited {
 body{
   background-color: lightblue
 }
+
+.contact{
+  text-align: center;
+}
+
+.contact-img{
+  height: 50px;
+  width: 50px;
+}
+
+.contact-images{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+ margin-bottom: 5px;
+}
