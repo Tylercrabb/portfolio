@@ -16,7 +16,7 @@
   padding: 20px;
   border-bottom: 1px solid black;
   background: url("waterrrrr.jpg");
-  width: 100%;
+  /* width: 100%; */
 }
 
 a{
@@ -25,8 +25,8 @@ a{
 
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .name-header{
@@ -138,4 +138,42 @@ ul{
 
 li{
  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+ .about-me{
+   width: 100%;
+ }
+
+ .aboutMe{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   text-align: center;
+   margin-bottom: 15px;
+
+ }
+
+ img{
+   width: 50%;
+   height: 50%;
+   margin: auto;
+ }
+
+ .header{
+   width: 100%;
+ }
+}
+
+ul{
+  padding-bottom: 15px;
+}
+
+.links:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
 }
