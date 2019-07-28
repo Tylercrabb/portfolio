@@ -1,30 +1,21 @@
 $(document).ready(function () {
-  // Add smooth scrolling to all links
   $("a").on('click', function (event) {
-
-
-    if (this.hash !== "") {
-
+    if (event.currentTarget.hash === "about me" || "projects" || "contact") {
       event.preventDefault();
-
-
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function () {
-        window.location.hash = hash;
+      document.querySelector(event.currentTarget.hash).scrollIntoView({
+        behavior: 'smooth'
       });
     }
-  });
+  })
 
+  // sticky header
   window.onscroll = function () { stickyHeader() };
 
+  const header = document.getElementById("myHeader");
 
-  var header = document.getElementById("myHeader");
 
-
-  var sticky = header.offsetTop;
-
+  const sticky = header.offsetTop;
+  console.log(sticky)
   function stickyHeader() {
     if (window.pageYOffset > sticky) {
       header.classList.add("sticky");
