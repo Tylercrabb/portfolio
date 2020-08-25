@@ -1,26 +1,45 @@
-$(document).ready(function () {
-  $("a").on('click', function (event) {
-    if (event.currentTarget.hash === "about me" || "projects" || "contact") {
-      event.preventDefault();
-      document.querySelector(event.currentTarget.hash).scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  })
+// $(document).ready(function () {
+//   $("a").on('click', function (event) {
+//     if (event.currentTarget.hash === "about me" || "projects" || "contact") {
+//       event.preventDefault();
+//       document.querySelector(event.currentTarget.hash).scrollIntoView({
+//         behavior: 'smooth'
+//       });
+//     }
+//   })
 
-  // sticky header
-  window.onscroll = function () { stickyHeader() };
+//   // sticky header
+//   window.onscroll = function () { stickyHeader() };
 
-  const header = document.getElementById("myHeader");
+//   const header = document.getElementById("myHeader");
 
 
-  const sticky = header.offsetTop;
-  console.log(sticky)
-  function stickyHeader() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
+//   const sticky = header.offsetTop;
+//   console.log(sticky)
+//   function stickyHeader() {
+//     if (window.pageYOffset > sticky) {
+//       header.classList.add("sticky");
+//     } else {
+//       header.classList.remove("sticky");
+//     }
+//   }
+// });
+
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () { myFunction() };
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
   }
-});
+}
