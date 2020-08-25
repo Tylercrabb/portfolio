@@ -30,7 +30,6 @@ body {
 }
 
 .name-header{
-  /* margin: 0; */
   padding: 25px;
 }
 
@@ -112,7 +111,7 @@ a:link, a:visited {
 .about-me{
   font-size: 25px;
   align-self: flex-end;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .aboutMe{
